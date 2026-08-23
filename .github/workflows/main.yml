@@ -1,4 +1,4 @@
-name: Deploy to Azure
+name: Deploy_to_Azure
 on:
   push: 
     branches: 
