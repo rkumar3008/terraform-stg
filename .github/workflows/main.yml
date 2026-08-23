@@ -5,7 +5,7 @@ on:
       - main
       - feature/**
 permissions:
-  pull-requests: read|write
+  pull-requests: read
 jobs:
   my_first_job:
     runs-on: Windows
