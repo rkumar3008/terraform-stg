@@ -1,11 +1,12 @@
-namename: Deploy to Azure
+name: Deploy to Azure
 on:
   push: 
     branches: 
       - main
       - feature/**
 permissions:
-  pull-requests: read
+  id-token: write
+  contents: read
 jobs:
   my_first_job:
     runs-on: Windows
