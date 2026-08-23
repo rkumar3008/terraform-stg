@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   my_first_job:
-    runs-on: windows-latest
+    runs-on: [self-hosted, Windows]
     steps:
       - name: checkout
         uses: actions/checkout@v4
