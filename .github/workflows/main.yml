@@ -1,0 +1,29 @@
+namename: Deploy to Azure
+on:
+  push: 
+    branches: 
+      - main
+      - feature/**
+permissions:
+  pull-requests: read|write
+jobs:
+  my_first_job:
+    runs-on: Windows
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: az login
+        uses: Azure/login@v2.3.1
+        with:
+          client-id: ${{secrets.AZURE_CLIENT_ID}}
+          tenant-id: ${{secrets.AZURE_TENANT_ID}}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: terraform_init
+        run: terraform init
+      - name: validate
+        run: terraform validate
+      - name: terraform_plan
+        run: terraform plan
+          
+        
+    
