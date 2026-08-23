@@ -1,6 +1,6 @@
 name: Deploy_to_Azure
 
-on: main
+on: master
 permissions:
   id-token: write
   contents: read
