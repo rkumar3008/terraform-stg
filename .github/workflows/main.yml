@@ -1,11 +1,6 @@
 name: Deploy_to_Azure
 
-on:
-  push:
-    branches:
-      - main
-      - feature/**
-
+on: main
 permissions:
   id-token: write
   contents: read
