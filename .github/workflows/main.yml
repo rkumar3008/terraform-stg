@@ -1,4 +1,5 @@
 name: Deploy_to_Azure
+run-name: terraform_plan
 
 on: push
 permissions:
