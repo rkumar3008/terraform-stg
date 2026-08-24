@@ -12,6 +12,7 @@ permissions:
 jobs:
   terraform_plan:
     runs-on: self-hosted
+    environment: dev
     steps:
       - name: checkout
         uses: actions/checkout@v4
