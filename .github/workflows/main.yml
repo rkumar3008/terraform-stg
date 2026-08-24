@@ -1,7 +1,10 @@
 name: Deploy_to_Azure
 run-name: terraform_plan
 
-on: push
+on: 
+  push:
+    branches:
+    
 permissions:
   id-token: write
   contents: read
