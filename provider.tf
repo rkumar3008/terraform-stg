@@ -17,9 +17,10 @@ resource "azurerm_resource_group" "rk-rg1" {
     name = "us-rg"
     location = "east us"
 }
-
-
-
+resource "azurerm_resource_group" "rk-rg2" {
+    name = "us-rg-humana"
+    location = "east us"
+}
 
 resource "azurerm_storage_account" "us-stg" {
     name = "usstg1"
