@@ -4,12 +4,12 @@ run-name: terraform_plan
 on: 
   push:
     branches:
-      - main
+      - master
       - feature-*
       
   pull_request:
     branches:
-      - main
+      - master
     
 permissions:
   id-token: write
